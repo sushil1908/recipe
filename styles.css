@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+.navcontainer{
+    width:100vw;
+    background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+
+
+
+    height:80px;
+}
+#navlist{
+    padding:12px;
+    margin-left: 15px;
+    margin-right:15px;
+    list-style: none;
+    font-size:2rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: azure;
+}
+#navitems{
+    display:flex;
+    gap: 40px;
+}
+a{
+    color: azure;
+}
+footer{
+    display: flex;
+}
+.footer{
+    overflow-x: none;
+    width:100vw;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+
+    
+
+
+    height:40px;
+    text-align: center;
+}
+.footer p{
+    color:azure;
+    font-size: 2rem;
+}
+.contentbox{
+    width: 60%;
+    background-color: azure;
+    /* border: 2px solid red; */
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    box-shadow: 0px 0px 30px rgb(94, 92, 92);
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition:all 1s linear 0.2s;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 20px;
+}
+.rightBox img{
+    width:200px;
+    height:175px;
+    border-radius: 20px;
+}
+.rightBox:hover{
+  transform: scale(1.2);
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+h2{
+    font-size:2rem;
+}
+h3{
+    font-size:1.4rem;
+}
+#ingBox{
+    font-size: 1.2rem;
+}
+.recipeBox{
+    font-size:1.2rem;
+}
+.rightBox .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(86, 83, 83, 0.596);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition:all 0.7s linear 0s;
+}
+.rightBox .overlay:hover{
+    opacity: 1;
+}
+
+.rightBox .overlay span{
+    color: azure;
+    font-size: 1.4rem;
+}
